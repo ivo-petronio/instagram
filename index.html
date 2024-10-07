@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Instagram</title>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="https://www.instagram.com"><img src="img/logo.png"></a>
+		</div>
+		<div class="header-icons">
+			<a href="https://www.instagram.com"><button class="header-ico">
+				<ion-icon name="paper-plane-outline"></ion-icon>
+			</button></a>
+			<a href="https://www.instagram.com"><button class="header-ico">
+				<ion-icon name="compass-outline"></ion-icon>
+			</button></a>
+			<a href="https://www.instagram.com"><button class="header-ico">
+				<ion-icon name="heart-outline"></ion-icon>
+			</button></a>
+			<a href="https://www.instagram.com"><button class="header-ico">
+				<ion-icon name="person-outline"></ion-icon>
+			</button></a>
+		</div>
+	</div> <!-- end div.header -->
+	<div class="page-container">
+		<div class="principal">
+<!-- STORIES AREA -->
+			<div class="stories">
+				<ul class="stories-list">
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/01-9gag.png" />
+							<label>Fulano</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/02-meowed.png" />
+							<label>Ciclano</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/03-barked.png" />
+							<label>Beltrano</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/04-nathan.png" />
+							<label>Seu_Zé</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/05-wawawiwa.png" />
+							<label>Joãozinho</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/06-responde-ai.png" />
+							<label>Seu Ninga</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/07-filosofia-moderna.png" />
+							<label>Anonimáticos</label>
+						</div>
+					</li>
+					<li class="stories-item">
+						<div class="story-user-card">
+							<img src="img/stories/com-fundo/09-meme.png" />
+							<label>Lunáticos</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+<!-- POSTS AREA -->
+			<!-- POST #1 -->
+			<div class="posts">
+				<div class="post-card">
+					<div class="author-info">
+						<img src="img/stories/sem-fundo/03-barked.jpeg" />
+						<label> Beltrano </label>
+					</div>
+					<div class="photo-post">
+						<img src="img/posts/01-gatotelefone.jpeg" />
+					</div>
+					<div class="interative-icons">
+						<button class="favorite-icon">
+							<ion-icon name="heart-outline"></ion-icon>
+						</button>
+						<button class="comment-icon">
+							<ion-icon name="chatbubble-outline"></ion-icon>
+						</button>
+						<button class="message-icon">
+							<ion-icon name="paper-plane-outline"></ion-icon>
+						</button>
+						<button class="bookmark-icon">
+							<ion-icon name="bookmark-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			<!-- POST #2 -->
+				<div class="post-card">
+					<div class="author-info">
+						<img src="img/stories/sem-fundo/04-nathan.jpeg" />
+						<label> Seu_Zé </label>
+					</div>
+					<div class="photo-post">
+						<img src="img/posts/02-dog.jpeg" />
+					</div>
+					<div class="interative-icons">
+						<button class="favorite-icon">
+							<ion-icon name="heart-outline"></ion-icon>
+						</button>
+						<button class="comment-icon">
+							<ion-icon name="chatbubble-outline"></ion-icon>
+						</button>
+						<button class="message-icon">
+							<ion-icon name="paper-plane-outline"></ion-icon>
+						</button>
+						<button class="bookmark-icon">
+							<ion-icon name="bookmark-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			<!-- POST #3 -->
+				<div class="post-card">
+					<div class="author-info">
+						<img src="img/stories/sem-fundo/01-9gag.jpeg" />
+						<label> Fulano </label>
+					</div>
+					<div class="photo-post">
+						<img src="img/posts/01-gatotelefone.jpeg" />
+					</div>
+					<div class="interative-icons">
+						<button class="favorite-icon" onclick="interativeClick();">
+							<ion-icon name="heart-outline"></ion-icon>
+						</button>
+						<button class="comment-icon">
+							<ion-icon name="chatbubble-outline"></ion-icon>
+						</button>
+						<button class="message-icon">
+							<ion-icon name="paper-plane-outline"></ion-icon>
+						</button>
+						<button class="bookmark-icon">
+							<ion-icon name="bookmark-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+<!-- SIDEBAR AREA -->
+		<aside class="sidebar">
+			<div class="your-perfil-container">
+				<div class="your-perfil-id">
+					<div class="your-photo"></div>
+					<div class="about-you">
+						<label class="name">ivopetronio</label>
+						<label class="social-name">Ipmon</label>
+					</div>
+				</div>
+			</div>
+			<div class="recommended-title">
+				<label>Sugestões para você</label>
+			</div>
+			<div class="sidebar-cards">
+				<div class="sidebar-card">
+					<div class="recommended-user">
+						<img src="img/sidebar/04.jpeg" />
+						<label>galinhacaipirasimsenhor</label>
+					</div>
+					<div class="follow-btn">
+						<a href="http://www.instagram.com"> Seguir </a>
+					</div>
+				</div>
+				<div class="sidebar-card">
+					<div class="recommended-user">
+						<img src="img/sidebar/01.jpeg" />
+						<label>entre_tapas_e_beijos</label>
+					</div>
+					<div class="follow-btn">
+						<a href="http://www.instagram.com"> Seguir </a>
+					</div>
+					</div>
+					<div class="sidebar-card">
+						<div class="recommended-user">
+							<img src="img/sidebar/03.jpeg" />
+							<label>meu_pintinho_amarelinho</label>
+						</div>
+					<div class="follow-btn">
+						<a href="http://www.instagram.com"> Seguir </a>
+					</div>
+				</div>
+				<div class="sidebar-card">
+					<div class="recommended-user">
+						<img src="img/sidebar/02.jpeg" />
+						<label>estrela_decadente</label>
+					</div>
+					<div class="follow-btn">
+						<a href="http://www.instagram.com"> Seguir </a>
+					</div>
+				</div>
+				<div class="sidebar-card">
+					<div class="recommended-user">
+						<img src="img/sidebar/05.jpeg" />
+						<label> pasme_meu_cao_e_um_bicho </label>
+					</div>
+					<div class="follow-btn">
+						<a href="http://www.instagram.com"> Seguir </a>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
