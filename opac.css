@@ -1,0 +1,477 @@
+/*-----------------------------------------------
+---------------- EXTERNAL TYPES -----------------
+-------------------------------------------------
+
+### Using the font "Sometype mono" at this page.
+### It can be obtained from Google Fonts website:
+### https://fonts.google.com
+
+-------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/*-------------------------------------------
+---------------- MEDIA QUERIES --------------
+-------------------------------------------*/
+
+@media screen and (max-width: 1920px) and (min-width: 1380px) {
+
+    #wrapper .container-fluid {
+        position: relative;
+        top: -10vh;
+        width: 100%;
+    }
+
+    #opac-main-search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1380px) and (min-width: 1050px) {
+    #wrapper #header-region .container-fluid .banner-title-container .orgao {
+        font-size: 4vmin;
+    }
+
+    .container-fluid #opac-main-search  {
+        height: 5vmin;
+    }
+
+    #wrapper #header-region {
+        top: 0;
+    }
+
+    .top-options {
+        width: 100%;
+    }
+
+    .top-options .top-link-item {
+        font-size: 3vmin;
+    }
+
+    #wrapper .container-fluid {
+        top: 40vh;
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 1050px) and (min-width: 992px) {
+    .top-options {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .top-navbar-menu {
+        width: 100%;
+    }
+
+    .top-options .top-link-item {
+        font-size: 3vmin;
+    }
+
+    .top-options {
+        width: 90%;
+    }
+
+    .top-options .top-link-item {
+        font-size: 3vmin;
+    }
+
+    #wrapper #header-region .container-fluid .banner-title-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wrapper .container-fluid #opac-main-search  {
+        height: 5vmin;
+        width: 100%;
+        margin: 0 2%;
+    }
+
+    #translControl1 {
+        width: 50%;
+    }
+
+    #wrapper .container-fluid {
+        top: 40vh;
+        width: 70%;
+    }
+
+    #wrapper #header-region .container-fluid .banner-title-container .orgao {
+        font-size: 5vmin;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 360px) {
+  
+    #wrapper #header-region .container-fluid .banner-title-container {
+      	font-size: 5vmin;
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+  	}
+  
+    .container-fluid #opac-main-search  {
+      	top: -5vh;
+    }
+  
+    #wrapper #header-region .container-fluid .banner-title-container .orgao {
+      	font-size: 5vmin;
+  	}
+
+    .top-options {
+        width: 90%;
+    }
+
+    .top-options .top-link-item {
+        font-size: 3vmin;
+    }
+  
+  	#wrapper > .container-fluid {
+  		position: absolute;
+  		width: 80%;
+  		padding: 0;
+  		top: -30vh;
+	}
+  
+  	#opac-main-search #searchform .form-row > div #masthead_search {
+      	width: 100%;
+	}
+  
+  	#opac-main-search #searchform .form-row div:nth-child(2) {
+      	order: 1;
+  	}
+  
+  	.container-fluid:has("#opac-main-search") {
+      	height: 20%;
+  	}
+
+}
+
+/*** Media query for mobile device size (approximate resolution: 360x740) ***/
+@media (min-width: 360px) {
+
+    #opac-main-search {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top-options {
+        width: 90%;
+    }
+
+    .top-options .top-link-item {
+        font-size: 3vmin;
+    }
+  
+  	#opac-main-search {
+    	height: 100%;  
+  	}
+  
+  	#wrapper div:nth-child(2) .row .col #opac-main- {
+		height: 70%;
+  	}
+}	
+
+/*-------------------------------------------
+-------------- GENERAL STYLES ---------------
+-------------------------------------------*/
+
+* {
+ 	box-sizing: border-box;
+  	margin: 0;	
+ 	padding: 0;
+  	font-family: 'Afacad Flux', Sans-serif;
+}
+
+#wrapper {
+ 	display: flex; 
+    flex-direction: column;
+  	align-items: center;
+  	position: relative;
+  	background-color: #FFF;
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
+    background-color: #FFF;
+}
+
+/* ---------------------------------
+-------------- HEADER --------------
+----------------------------------*/
+#wrapper #header-region {
+ 	position: relative;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+#wrapper .container-fluid:nth-child(5) {
+	display: none;
+}
+
+#wrapper .main {
+	margin-top: 300px;
+}
+
+
+
+
+/*-------------------------------------
+------------- TOP NAVBAR --------------
+---------------------------------------
+
+### Hides the original top navbar and
+creates a new personalized navbar
+
+-------------------------------------*/
+.navbar {
+ 	display: none; 
+}
+
+
+
+
+/*-----------------------------------
+------------ MAIN BANNER ------------
+-----------------------------------*/
+
+#wrapper #header-region .container-fluid {
+  	display: flex;
+  	position: absolute;
+	margin-bottom: 20px;
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	top: 0;
+}
+
+#wrapper #header-region .container-fluid .row {
+  	position: relative;
+ 	width: 100%;
+    margin: 0;
+}
+
+#wrapper #header-region .container-fluid:nth-child(2) .row {
+	width: 100%;
+}
+
+.container-fluid #opacheader {
+	width: 100vw;
+    display: flex;
+}
+
+.container-fluid .row #opacheader .default_item {
+ 	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	padding: 0;
+  	margin: 0;
+  	width: 100%;
+}
+
+#header-region .container-fluid:nth-child(2) .row #opacheader .default_item .default_body {
+  	position: relative;
+ 	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+  /* navbar */
+.navbar-default {
+
+}
+
+/*-----------------------------------
+----------- SEARCH BAR --------------
+-----------------------------------*/
+
+#opac-main-search form {
+  	padding: 0;
+  	height: 100%;
+}
+
+#wrapper > .container-fluid {
+  	position: absolute;
+  	width: 75%;
+  	padding: 0;
+  	top: 42vh;
+}
+
+#wrapper > .container-fluid .row {
+  	width: 100%;
+ 	margin: 0; 
+}
+  
+#wrapper > .container-fluid .row .col{
+  	width: 100%;
+}
+
+.container-fluid .row .col {
+ 	padding: 0;
+  	display: flex;
+  	width: 100%;
+  	justify-content: center;
+}
+
+.container-fluid #opac-main-search  {
+  //background-color: #5F2996;
+  background-color: #fff;
+  height: 6vmin;
+  margin: 0;
+  padding: 0;
+  opacity: .8;
+}
+
+
+
+#searchform {
+    position: relative;
+ 	width: 100%;
+}
+
+#select_library {
+  	position: relative;
+    background-color: #5F2996;
+    color: #FFFFFF;
+    border-radius: 0;
+    border: none;
+  	height: 100%;
+    font-family: "Alfacad Flux", Sans-serif;
+  	font-weight: 200;
+}
+
+.form-row #masthead_search {
+    background-color: #5F2996;
+    color: #FFFFFF;
+    border-radius: 0;
+    border: none;
+  	height: 100%;
+  	width: 120px;
+    font-family: "Alfacad Flux", Sans-serif;
+  	font-weight: 200;
+  	margin: 0;
+}
+
+.form-row {
+ 	width: 100%;
+  	height: 100%;
+  	margin: 0;
+}
+
+.form-row div:nth-child(1) {
+	padding: 0;
+  	height: 100%;
+}
+
+.form-row div {
+ 	height: 100%;
+	margin: 0;
+  	padding: 0;
+}
+
+
+.form-row div:nth-child(3) {
+ 	padding: 0;
+  	margin: 0;
+  	height: 100%;
+}
+
+.form-row div:nth-child(4) {
+ 	padding: 0;
+  	margin: 0;
+  	order: 3;
+  	height: 100%;
+}
+
+
+.form-row div:nth-child(4) button {
+  	width: 100%;
+  	padding: 0 20px;
+  	height: 100%;
+}
+
+#translControl1 {
+ 	border-radius: 0;
+    order: -1;
+    border: none;
+  	height: 100%;
+  	line-height: 100%;
+  	font-size: 23px;
+    font-family: Sometype Mono, Sans-serif;
+  	font-weight: 600;
+    padding-left: 5%;
+}
+
+.btn-primary {
+ 	background-color: #FFFFFF;
+    color: #9E3BFF;
+    border: none;
+    border-radius: 0;
+  	height: 100%;
+}
+
+#searchform .form-row div {
+ 	padding: 0;
+  	height: 100%;
+}
+
+#searchform .form-row div:nth-child(4) {
+  	order: 3;
+    border: none;
+	height: 100%;
+  	padding: 0;
+  	background-color: #FFF;
+}
+
+#searchform .form-row div:nth-child(4):hover {
+ 	border: none;
+}
+
+
+#searchform .form-row div:nth-child(4) button {
+    border: none;
+  	height: 100%;
+}
+
+
+#searchform .form-row div:nth-child(4) button:focus {
+ 	border: none; 
+}
+
+#searchform .form-row div:nth-child(4) button:hover {
+  	background-color: #FFF;
+  	border: none;
+}
+
+#searchform .form-row div:nth-child(4) button:hover {
+  	background-color: #FFF;
+  	color: #5F2996;
+  	border: none;
+}
+
+/*------------------------------------------
+----------- ADVANCED SEARCH BAR ------------
+--------------------------------------------
+
+### Hiddes the original advanced search bar
+
+------------------------------------------*/
+
+#wrapper .container-fluid .row:nth-child(2) {
+
+}
