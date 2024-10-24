@@ -1,0 +1,280 @@
+<style>
+
+:root {
+    --backImg: "";
+    --fundo: var(--backImg);
+    --logoUrl: url("https://www.gov.br/agricultura/pt-br/centrais-de-conteudo/biblioteca/logo_mapa.jpg/@@images/image");
+    --logo: var(--logoUrl);
+}
+
+#header-region {
+    top: 0;
+    height: 55vh;
+    position: relative;
+    width: 100vw;
+}
+
+#header-region::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--fundo);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    opacity: .8;
+    transition: 1s ease-in, position 0s;
+}
+
+/*---------------------------------------------------
+-------------------- TOP ICONS -------------------
+-----------------------------------------------------
+
+### Top icons on the top transparent
+### white bar
+
+###################################*/
+
+.top-links {
+    position: relative;
+    display: flex;
+    align-items; center;
+    height: 79%;
+    width: 100%;
+}
+
+.top-links:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+    opacity: .7;
+}
+
+.logo-mapa {
+    height: 75%;
+    width: 9%;
+    border-radius: 5%;
+    margin: auto 3%;
+    padding: 3% auto;
+    background-image: var(--logo);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    z-index: 3;
+}
+
+/*------------------------------------------------
+------------------ TOP BAR ---------------------
+------------------------------------------------*/
+
+.top-navbar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    width: 100%;
+}
+
+.top-navbar-container:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-navbar-menu {
+    position: relative;
+    width: 100%;
+    height: 23%;
+    display: flex;
+}
+
+.top-navbar-menu:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5F2996;
+    display: flex;
+    opacity: .8;
+}
+
+
+.top-options {
+    display: flex;
+    height: 100%;
+    width: 75%;
+    position: relative;
+    padding-left: 12%;
+}
+
+.top-options ul {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 28%;
+    transition: .5s ease;
+}
+
+.top-link-item:link {
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    line-height: 100%;
+    font-size: 2vmin;
+    font-weight: 400;
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+    overflow: hidden;
+}
+
+.top-link-item:link:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 200%;
+    width: 10%;
+    top: -45%;
+    left: -50%;
+    transform: rotate(40deg);
+}
+
+.top-link-item:link:hover,
+.top-link-item:visited:hover
+{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5F2996;
+}
+
+.top-link-item:link:hover:before {
+    left: 150%;
+    transform: rotate(40deg);
+    transition: all .4s ease;
+}
+
+.top-link-item:visited{
+    color: #FFF;
+    width: 100%;
+}
+
+/*---------------------------------------------------------
+---------- PRINCIPAL BANNER TITLE ---------
+----------------------------------------------------------*/
+
+.banner-title-container {
+    position: absolute;
+    display: table;
+    text-align: bottom;
+    flex-direction: column;
+    width: 75%;
+    top: 22vh;
+    padding: 0;
+}
+
+.orgao {
+    font-size: 5vmin;
+    color: #FFFFFF;
+    background-color: #5F2996;
+    display: table;
+    line-height: 80%;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 5px 0;
+    padding: 15px 15px;
+    opacity: .8;
+}
+
+#nome-orgao {
+    font-size: 7vmin;
+}
+
+</style>
+<div class="top-navbar-container">
+<div class="top-links">
+<div class="logo-mapa"></div>
+</div>
+<div class="top-navbar-menu"><nav class="top-options">
+<ul>
+<li class="item"><a href="https://repositorio-dspace.agricultura.gov.br/" class="top-link-item" target="_blank" rel="noopener">Biblioteca Digital</a></li>
+<li class="item"><a href="https://sistemasweb.agricultura.gov.br/sislegis/loginAction.do?method=exibirTela" class="top-link-item" target="_blank" rel="noopener">Sislegis</a></li>
+<li class="item"><a href="https://sistemas.agricultura.gov.br/tematres/vocab/index.php" class="top-link-item" target="_blank" rel="noopener">ThesAgro</a></li>
+</ul>
+</nav></div>
+</div>
+<div class="banner-title-container">
+<div id="sigla-orgao" class="orgao">Acervo Bibliogr&aacute;fico</div>
+<div id="nome-orgao" class="orgao">Biblioteca Nacional de Agricultura - Binagri</div>
+</div>
+<!-- SEÇÃO JAVASCRIPT - PRINCIPAL BANNER - IMAGE TRANSITION --> <!-- DAS IST MEIN ZUERST JAVASCRIPTS PLUGIN -->
+<script defer="defer">
+const bannerImg1 = new Image();
+const bannerImg2 = new Image();
+const bannerImg3 = new Image();
+
+bannerImg1.src = "https://www.gov.br/agricultura/pt-br/centrais-de-conteudo/biblioteca/imagens/acervobinagri.jpeg/@@images/image";
+bannerImg2.src = "https://www.gov.br/agricultura/pt-br/centrais-de-conteudo/biblioteca/imagens/saladeestudos.jpeg/@@images/image";
+bannerImg3.src = "https://www.gov.br/agricultura/pt-br/centrais-de-conteudo/biblioteca/imagens/historia.jpg/@@images/image";
+
+var bannerImages = [bannerImg1.src, bannerImg2.src, bannerImg3.src];
+var imageIndex = 0;
+var htmlElement = document.querySelector("#header-region")
+
+document.onload = changeBannerBackgroundImage();
+
+function changeImage() {
+    htmlElement.style.setProperty("--fundo", `url(${bannerImages[imageIndex]})`);
+}
+
+function changeBannerBackgroundImage() {
+    if (imageIndex == 3) {
+        imageIndex = 0;
+    } else {
+        changeImage();
+        ++imageIndex;
+    }
+    setTimeout(() => {changeBannerBackgroundImage();}, 3500);
+}
+
+</script>
+<!-- ADDING LINK AND CLICK EVENT TO THE LOGO ON THE TOP BAR -->
+<script>
+var logo = document.querySelector(".logo-mapa");
+var link = "https://www.gov.br/agricultura/pt-br"; 
+logo.addEventListener('click', () => { window.open(link, '_blank'); });
+</script>
+<script>
+    logo.addEventListener('mouseover', () => {logo.style.cursor = "pointer";});
+</script>
