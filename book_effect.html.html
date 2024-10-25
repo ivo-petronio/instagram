@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transforms</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+		body {
+			background-color: lightseagreen;
+		}
+
+		#container {
+			position: relative;
+			width: 20%;
+			height: 70px;
+			margin: 200px auto;
+			text-align: center;
+			align-content: center;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 700;
+			font-family: "Playwrite GB S", cursive;
+			background-color: orange;
+			filter: drop-shadow(2px 2px 5px black);
+		}
+
+		#container::before {
+			content: "liebe";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: purple;
+			text-align: center;
+			align-content: center;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 700;
+			font-family: "Playwrite GB S", cursive;
+			transform: rotateX(-270deg);
+			transform-origin: top;
+			z-index: -1;
+			transition: all .7s;
+		}
+
+		#container::after {
+			content: "dir";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: pink;
+			text-align: center;
+			align-content: center;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 700;
+			font-family: "Playwrite GB S", cursive;
+			transform: rotateX(-270deg);
+			transform-origin: top;
+			z-index: -1;
+			transition: all .7s .5s;
+			
+		}
+
+		#container:hover::before {
+			transform: rotateX(0deg);
+			z-index: 0;
+		}
+
+
+		#container:hover::after {
+			transform: rotateX(0deg);
+			z-index: 0;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="container">Ich</div>
+</body>
+
+</html>
